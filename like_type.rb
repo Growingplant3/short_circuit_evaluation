@@ -9,7 +9,7 @@ class Girl
     puts "やっぱ男の性格って大事だよね〜まじ卍。"
   end
 
-  def do_you_like_this_kind_of_man?(chosen)
+  def do_you_like_this_kind_of_man(chosen)
     puts "え？#{chosen.name}はどうかって？"
     judgement(chosen.options)
   end
@@ -49,12 +49,12 @@ hanako.introduce
 
 boy_status = { job: "芸人", style: "フツメン", personality: "優しさ" }
 geinin = Boy.new("芸人の○", boy_status)
-hanako.do_you_like_this_kind_of_man?(geinin)
+hanako.do_you_like_this_kind_of_man(geinin)
 
 boy_status = { job: "バンドマン", style: "イケメン", personality: "優しさがない" }
 bandman = Boy.new("バンドの□", boy_status)
-hanako.do_you_like_this_kind_of_man?(bandman)
+hanako.do_you_like_this_kind_of_man(bandman)
 
 boy_status = { job: "俳優", style: "イケメン", personality: "優しさ" }
 actor = Boy.new("俳優の△", boy_status)
-hanako.do_you_like_this_kind_of_man?(actor)
+hanako.do_you_like_this_kind_of_man(actor)
